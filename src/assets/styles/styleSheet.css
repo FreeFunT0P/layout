@@ -1,0 +1,26 @@
+.button2{
+    font-size: 1.5em;
+    margin: 0.67em 0;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: black;
+    border-color: black;
+}
+.button2:hover{
+    color: black;
+    background-color: #FFFFFF;
+    border-color: black;
+    transition: 0.5s;
+}
+
+.button1{
+    font-size: 1em;
+    margin: 1.33em 0;
+    font-weight: bold;
+}
+.button1:hover{
+    color: #FFFFFF;
+    background-color: black;
+    border-color: black;
+    transition: 0.5s;
+}
