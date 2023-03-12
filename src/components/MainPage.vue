@@ -9,20 +9,41 @@
     <div class="servicesBar">
       <services-bar />
     </div>
+    <div class="reviewsBar">
+      <reviews-bar />
+    </div>
+    <div class="dossierBar">
+      <dossier-bar />
+    </div>
+    <div class="whyMeBar">
+      <why-me />
+    </div>
+    <div class="blogBar">
+      <blog-bar />
+    </div>
+
   </div>
 </template>
 
 <script>
 import HeaderBar from '@/components/HeaderBar'
 import SloganBar from '@/components/SloganBar'
-import servicesBar from '@/components/ServicesBar'
+import ServicesBar from '@/components/ServicesBar'
+import ReviewsBar from '@/components/ReviewsBar'
+import DossierBar from '@/components/DossierBar'
+import WhyMe from '@/components/WhyMe'
+import BlogBar from '@/components/BlogBar'
 
 export default {
   name: 'MainPage',
   components: {
     HeaderBar,
     SloganBar,
-    servicesBar,
+    ServicesBar,
+    ReviewsBar,
+    DossierBar,
+    WhyMe,
+    BlogBar,
   },
 }
 </script>
@@ -39,6 +60,7 @@ export default {
     top: 0;
     z-index: 99;
   }
+
 }
 
 
