@@ -21,6 +21,9 @@
     <div class="blogBar">
       <blog-bar />
     </div>
+    <div class="footerBar">
+      <footer-bar />
+    </div>
 
   </div>
 </template>
@@ -33,6 +36,7 @@ import ReviewsBar from '@/components/ReviewsBar'
 import DossierBar from '@/components/DossierBar'
 import WhyMe from '@/components/WhyMe'
 import BlogBar from '@/components/BlogBar'
+import FooterBar from '@/components/FooterBar'
 
 export default {
   name: 'MainPage',
@@ -44,6 +48,7 @@ export default {
     DossierBar,
     WhyMe,
     BlogBar,
+    FooterBar,
   },
 }
 </script>
