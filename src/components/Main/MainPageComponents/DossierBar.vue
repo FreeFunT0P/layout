@@ -19,8 +19,8 @@
           <h5>Досвід роботи понад 5 років</h5>
         </div>
       </div>
-      <div class="dossierButtonWrapper">
-        <el-button class="button2">Більше інформації</el-button>
+      <div class="dossierButtonWrapper" v-if="$route.name !== 'dossier'">
+        <el-button class="button2" @click="goto">Більше інформації</el-button>
       </div>
     </div>
     <div class="imgDossierWrapper">
@@ -30,8 +30,15 @@
 </template>
 
 <script>
+import router from "@/routes/router";
+
 export default {
-  name: 'DossierBar'
+  name: 'DossierBar',
+  methods:{
+    goto() {
+      router.push({name: 'dossier'})
+    }
+  },
 }
 </script>
 

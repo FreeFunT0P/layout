@@ -42,15 +42,22 @@
         </h4>
       </div>
     </div>
-    <div class="reviewsButtonWrapper">
-      <el-button class="button2">Більше відгуків</el-button>
+    <div class="reviewsButtonWrapper" v-if="$route.name !== 'review'">
+      <el-button class="button2" @click="goto">Більше відгуків</el-button>
     </div>
   </div>
 </template>
 
 <script>
+import router from "@/routes/router";
+
 export default {
-  name: 'ReviewsBar'
+  name: 'ReviewsBar',
+  methods:{
+    goto() {
+      router.push({name: 'review'})
+    }
+  },
 }
 </script>
 

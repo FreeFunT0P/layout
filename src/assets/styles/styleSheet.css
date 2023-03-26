@@ -17,6 +17,8 @@
     font-size: 1em;
     margin: 1.33em 0;
     font-weight: bold;
+    color: black;
+    border-color: black;
 }
 .button1:hover{
     color: #FFFFFF;

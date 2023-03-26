@@ -3,52 +3,25 @@
     <div class="headerBar">
       <header-bar />
     </div>
-    <div class="sloganBar">
-      <slogan-bar />
-    </div>
-    <div class="servicesBar">
-      <services-bar />
-    </div>
-    <div class="reviewsBar">
-      <reviews-bar />
-    </div>
-    <div class="dossierBar">
-      <dossier-bar />
-    </div>
-    <div class="whyMeBar">
-      <why-me />
-    </div>
-    <div class="blogBar">
-      <blog-bar />
+    <div class="routs">
+      <router-view/>
     </div>
     <div class="footerBar">
       <footer-bar />
     </div>
-
   </div>
 </template>
 
 <script>
-import HeaderBar from '@/components/HeaderBar'
-import SloganBar from '@/components/SloganBar'
-import ServicesBar from '@/components/ServicesBar'
-import ReviewsBar from '@/components/ReviewsBar'
-import DossierBar from '@/components/DossierBar'
-import WhyMe from '@/components/WhyMe'
-import BlogBar from '@/components/BlogBar'
-import FooterBar from '@/components/FooterBar'
+import HeaderBar from '@/components/Main/HeaderBar'
+import FooterBar from '@/components/Main/FooterBar'
+
 
 export default {
   name: 'MainPage',
   components: {
     HeaderBar,
-    SloganBar,
-    ServicesBar,
-    ReviewsBar,
-    DossierBar,
-    WhyMe,
-    BlogBar,
-    FooterBar,
+    FooterBar
   },
 }
 </script>

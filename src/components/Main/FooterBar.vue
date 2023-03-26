@@ -9,14 +9,14 @@
     <div class="linksContainer">
       <h3>Сторінки</h3>
       <div class="column">
-        <h5>Головна</h5>
-        <h5>Послуги</h5>
-        <h5>Відгуки</h5>
+        <h5 @click="goto('main')">Головна</h5>
+        <h5 @click="goto('services')">Послуги</h5>
+        <h5 @click="goto('review')">Відгуки</h5>
       </div>
       <div class="column">
-        <h5>Блог</h5>
-        <h5>Контакти</h5>
-        <h5>Про мене</h5>
+        <h5 @click="goto('blog')">Блог</h5>
+        <h5 @click="goto('contacts')">Контакти</h5>
+        <h5 @click="goto('dossier')">Про мене</h5>
       </div>
     </div>
   </div>
@@ -24,7 +24,31 @@
 
 <script>
 export default {
-  name: "FooterBar"
+  name: "FooterBar",
+  methods: {
+    goto(val) {
+      switch (val) {
+        case 'main':
+          this.$router.push({name: 'main'})
+          break
+        case 'services':
+          this.$router.push({name: 'services'})
+          break
+        case 'review':
+          this.$router.push({name: 'review'})
+          break
+        case 'dossier':
+          this.$router.push({name: 'dossier'})
+          break
+        case 'blog':
+          this.$router.push({name: 'blog'})
+          break
+        case 'contacts':
+          this.$router.push({name: 'contacts'})
+          break
+      }
+    },
+  },
 }
 </script>
 
