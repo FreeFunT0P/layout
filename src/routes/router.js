@@ -9,57 +9,58 @@ import OneBlogEntries from "@/components/OneBlogEntries"
 import ContactsBar from "@/components/ContactsBar"
 import SloganBar from "@/components/Main/MainPageComponents/SloganBar"
 
+const baseUrl = process.env.BASE_URL
 const routes = [
   {
-    path: '/',
+    path: `${baseUrl}/`,
     name: 'main',
     component: MainPageRout,
     props: true,
   },
   {
-    path: '/services',
+    path: `${baseUrl}/services`,
     name: 'services',
     component: ServicesBar,
     props: true,
   },
   {
-    path: '/services/:val',
+    path: `${baseUrl}/services/:val`,
     name: 'OneService',
     component: OneService,
     props: true,
   },
   {
-    path: '/review',
+    path: `${baseUrl}/review`,
     name: 'review',
     component: ReviewsBar,
     props: true,
   },
   {
-    path: '/dossier',
+    path: `${baseUrl}/dossier`,
     name: 'dossier',
     component: DossierBar,
     props: true,
   },
   {
-    path: '/blog',
+    path: `${baseUrl}/blog`,
     name: 'blog',
     component: BlogBar,
     props: true,
   },
   {
-    path: '/blog/:name',
+    path: `${baseUrl}/blog/:name`,
     name: 'OneBlogEntries',
     component: OneBlogEntries,
     props: true,
   },
   {
-    path: '/contacts',
+    path: `${baseUrl}/contacts`,
     name: 'contacts',
     component: ContactsBar,
     props: true,
   },
   {
-    path: '/slogan',
+    path: `${baseUrl}/slogan`,
     name: 'slogan',
     component: SloganBar,
     props: true,
